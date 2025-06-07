@@ -1,0 +1,462 @@
+:root {
+    --primarycolor: #ff2740;
+    --secondorycolor: #f7bcf7;
+    --lightcolor: #ffffff;
+    --bgcolor-1: #171a1c;
+    --bgcolor-2: #22282a;
+    --padding: 8%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    color: var(--lightcolor);
+}
+
+span {
+    color: var(--primarycolor);
+}
+
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 3.5rem 0;
+}
+
+h4 {
+    font-size: 1.25rem;
+    color: var(--secondorycolor);
+}
+
+h5 {
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+p {
+    color: var(--secondorycolor);
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+nav {
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+}
+
+nav ul li a {
+    color: var(--lightcolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    color: var(--primarycolor);
+}
+
+
+/* ============ Home's Section ==============*/
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+.IBN {
+    background-color: var(--primarycolor);
+    color: var(--lightcolor);
+    border: 2px solid transparent;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 0.81rem 0.87rem;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.IBV {
+    background-color: var(--primarycolor);
+    color: var(--lightcolor);
+    border: 2px solid transparent;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 0.81rem 0.87rem;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.IBV:hover {
+    background-color: transparent;
+    border: 2px solid var(--primarycolor);
+}
+
+.IBN:hover {
+    background-color: transparent;
+    border: 2px solid var(--primarycolor);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    position: relative;
+    bottom: -10px;
+}
+
+.social {
+    margin-top: 3.5rem;
+}
+
+.social img {
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}
+
+.home .imgs {
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+}
+
+.home .imgs img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, top 1s, left 2s;
+}
+
+.home .imgs:hover .mypic {
+    bottom: 40px;
+}
+
+
+/* =================== About's Section ======================*/
+
+.about {
+    background-color: var(--bgcolor-2);
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .imgs {
+    width: 35%;
+}
+
+.about .imgs img {
+    width: 90%;
+}
+
+.about .text {
+    width: 35%;
+}
+
+
+/* =================== Service's Section ======================*/
+
+.service {
+    background-color: var(--bgcolor-1);
+    padding: var(--padding);
+}
+
+.Text-center {
+    Text-align: center;
+}
+
+.Text-left {
+    text-align: left;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 200px;
+    background-color: var(--bgcolor-2);
+    border-radius: 20%;
+    padding: 1.3rem 2rem;
+    text-align: center;
+}
+
+.card i {
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primarycolor);
+    margin: 2rem;
+}
+
+
+/* =================== Skill's Section ======================*/
+
+.Skills {
+    background-color: var(--bgcolor-2);
+    padding: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill {
+    width: 100px;
+    height: 100px;
+    background-color: var(--lightcolor);
+    border-radius: 50%;
+    margin: 0 2rem 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Skills .container-skill {
+    width: 40%;
+}
+
+.skill img {
+    width: 70%;
+}
+
+.Skills .content-skill {
+    width: auto;
+}
+
+.Skills .imgs {
+    width: 40%;
+}
+
+.Skills .imgs img {
+    width: 85%;
+}
+
+
+/* =================== Footer's Section ======================*/
+
+footer {
+    padding: 2rem var(--padding);
+    background-color: var(--bgcolor-1);
+}
+
+footer .content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .content-footer p {
+    color: var(--lightcolor);
+    text-align: center;
+    width: 500px;
+    margin-top: 1rem;
+}
+
+footer .content-footer p .end {
+    color: var(--primarycolor);
+    margin-top: 1rem;
+}
+
+
+/* =================== Menu's Section ======================*/
+
+#menu {
+    position: relative;
+    cursor: pointer;
+    appearance: none;
+    user-select: none;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#menu span {
+    display: none;
+    top: 10px;
+    background-color: var(--lightcolor);
+    border-radius: 6px;
+    transition: 0.4s;
+    transform-origin: 0 0;
+    width: 33px;
+    height: 3px;
+    margin-bottom: 5px;
+}
+
+#menu.is-active span:nth-child(1) {
+    transform: translate(0px, -2px) rotate(45deg);
+}
+
+#menu.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(15px)
+}
+
+#menu.is-active span:nth-child(3) {
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+
+#menu.is-active span {
+    background-color: var(--primarycolor);
+}
+
+
+/* =================== Media Queries's Section ======================*/
+
+@media screen and (max-width: 575px) {
+     :root {
+        --padding: 1.5rem
+    }
+    html {
+        font-size: 10px;
+    }
+    .home .imgs {
+        display: none;
+    }
+    nav a {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--bgcolor-2);
+        top: 0;
+        left: 0;
+    }
+    nav ul.is-active {
+        display: block;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 30px;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--bgcolor-1);
+        border-bottom: 1px solid var(--bgcolor-1);
+        width: 100vw;
+        height: 40px;
+        padding-top: 0;
+        z-index: 100;
+    }
+    .container-texts {
+        bottom: 0;
+    }
+    .social {
+        margin-top: 70px;
+    }
+    .social img {
+        margin-right: 3.2rem;
+        width: 4rem;
+    }
+    .text {
+        position: relative;
+        bottom: 0;
+        top: -10px;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    .IBN {
+        padding: 1rem 1.6rem;
+        font-size: 1.4rem;
+    }
+    nav.IBN {
+        display: none;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .IBV {
+        display: none;
+    }
+    #menu span {
+        display: block;
+    }
+    .home {
+        width: 100vw;
+    }
+    .about {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about .imgs img {
+        display: none;
+    }
+    .about .text {
+        width: 100vw;
+        margin: left -20px;
+        align-content: center;
+        text-align: center;
+    }
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .card {
+        width: 250px;
+        border-radius: 10%;
+    }
+}
